@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+class student {
+private:
+    int rollno;
+    string name;
+    int division;
+
+public:
+    student(int r,string n,int d)
+{
+
+    rollno = r;
+    name = n;
+    division = d;
+};
+
+void display(){
+
+    cout<<"STUDENT DETAILS";
+    cout<<"________________________"<<endl;
+     
+    cout<<"rollno:"<< rollno << endl;
+    cout<<"name:"<< name<<endl;
+    cout<<"division:"<<division<<endl;
+}
+};
+
+int main(){
+
+    student s1(27,"stegerrr",1);
+    s1.display();
+
+    return 0;
+}
