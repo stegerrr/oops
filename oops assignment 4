@@ -1,0 +1,35 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class book {
+    private:
+    int serialno;
+    string name;
+    float price;
+    string author;
+
+    public:
+    book(int s,string n,float p,string a) {
+
+    serialno=s;
+    name=n;
+    price=p;
+    author= a;
+}
+
+void display(){
+    cout<<"serialno of book is:"<<serialno<<endl;
+    cout<<"name of the book is:"<<name<<endl;
+    cout<<"price of the book is:"<<price<<endl;
+    cout<<"author of the book is:"<<author<<endl;
+}
+};
+int main(){
+
+    book b1(23,"c++ advanced",410,"steven gerrard");
+    b1.display();
+
+    return 0;
+}
+
