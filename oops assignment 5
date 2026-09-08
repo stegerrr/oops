@@ -1,0 +1,50 @@
+include<iostream>
+using namespace std;
+
+class student 
+
+{
+public:
+
+string name ;
+int id ;
+int rollno;
+int division;
+
+student ( string name , int id , int rollno , int division )
+
+{
+this-> name = name;
+this-> id = id;
+this-> rollno = rollno;
+this-> division = division;
+
+}
+
+void display()
+{
+
+cout<<"student name:"<<this->name<<endl;
+cout<<"student rollno:"<<this->rollno<<endl;
+cout<<"student id:"<<this->id<<endl;
+cout<<"student division:"<<this->division<<endl;
+
+}
+};
+
+
+int main()
+{
+student s1("virat",27,2120,1);s1.display();
+
+return 0;
+
+}
+
+
+
+
+
+
+
+
