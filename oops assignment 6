@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+class employee
+
+{ 
+    public :
+    string name;
+    int id;
+    float salary;
+
+    employee(string n , int i , float s)
+    {
+        name=n;
+        id=i;
+        salary=s;
+    }
+
+    ~employee()
+    {
+        cout<<"DESTRUCTOR CALLED FOR ";
+        
+
+    }
+    void display()
+    {
+        cout<<"NAME OF THE EMPLOYEE IS :"<<name<<endl;
+        cout<<"ID OF THE EMPLOYEE IS :"<<id<<endl;
+        cout<<"SALARY OF THE EMPLOYEE IS :"<<salary<<endl;
+    }
+
+
+};
+
+int main(){
+
+    employee e1("OM JOSHI",1,10);
+    e1.display();
+
+    employee e2("HARSHAL KHUNE",17,20);
+    e2.display();
+
+    return 0;
+}
